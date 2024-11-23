@@ -1,0 +1,37 @@
+---
+import type { GetStaticPaths } from "astro";
+import { getCollection, render } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import SectionContainer from "../../components/ui/SectionContainer.astro";
+import TextHeader from "../../components/ui/TextHeader.astro";
+import { date } from "astro:schema";
+import TextParraf from "../../components/ui/TextParraf.astro";
+
+export async function getStaticPaths() {
+  const food = await getCollection("food");
+
+  return food.map((food) => ({
+    params: { id: food.slug },
+    props: { food },
+  }));
+}
+
+const { food } = Astro.props;
+const { data } = food;
+const { title, description, img, buy } = data;
+
+const {Content} = await render(food)
+---
+
+<Layout title={`Crave Bakery - ${title}`} description={description}>
+  <SectionContainer className="gap-5 text-center">
+    <TextHeader>
+      {title}
+    </TextHeader>
+    <div class="text-base flex flex-col gap-2 max-w-2xl text-pretty">
+        <Content></Content>
+    </div>
+    <img src=`/${img}` class="max-w-md" alt={title}>
+
+  </SectionContainer>
+</Layout>
