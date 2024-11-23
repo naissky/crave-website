@@ -1,0 +1,31 @@
+---
+import { getCollection } from "astro:content";
+import SectionContainer from "./ui/SectionContainer.astro";
+import CardFood from "./ui/CardFood.astro";
+
+const food = await getCollection("food");
+
+console.log(food);
+---
+
+<SectionContainer className="gap-5">
+  <h2 class="text-center font-bold text-7xl">COOKIES MENU</h2>
+  <div
+    class="flex flex-col md:flex-row flex-wrap md:gap-10 justify-center items-center"
+  >
+    {
+      food.map((food) => {
+        const { slug, data } = food;
+        const { title, description, img, buy } = data;
+
+        return (
+          <a class="p-2 hover:shadow-2xl ease-in-out duration-300 rounded-xl" href={`/food/${slug}`}>
+            <CardFood src={img} title={title} link={`/food/${slug}`}>
+              {description}
+            </CardFood>
+          </a>
+        );
+      })
+    }
+  </div>
+</SectionContainer>

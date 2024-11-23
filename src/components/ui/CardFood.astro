@@ -1,0 +1,19 @@
+---
+interface CardFood {
+    src: string,
+    title: string
+    link: string
+}
+ const { src, title, link } = Astro.props
+---
+
+<div class="flex flex-col justify-start items-start rounded-xl py-7 px-2 gap-3 max-w-xs">
+    <img src={src} class="w-full">
+    <h3 class="text-2xl font-black text-pretty">
+        {title}
+    </h3>
+    <p class="text-base">
+        <slot/>
+    </p>
+    <a class="w-full text-center bg-crave-rose text-crave-black rounded-lg font-medium px-5 py-3 hover:bg-crave-black hover:text-crave-white ease-out duration-150" href={link}>Comprar</a>
+</div>

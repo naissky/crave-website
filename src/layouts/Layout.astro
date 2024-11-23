@@ -1,0 +1,52 @@
+---
+// Supports weights 100-700
+import "@fontsource-variable/josefin-sans";
+// Supports weights 400-900
+import "@fontsource-variable/playfair-display";
+import Navbar from "../components/Navbar.astro";
+import { ViewTransitions } from "astro:transitions";
+import Footer from "../components/Footer.astro";
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+
+    <ViewTransitions />
+  </head>
+  <body class="bg-crave-white">
+    <Navbar />
+    <main class="">
+      <slot />
+    </main>
+    <Footer/>
+  </body>
+</html>
+<style is:global>
+  :root {
+    background: crave-white;
+    scroll-behavior: smooth;
+  }
+  html {
+    font-family: "Josefin Sans Variable", system-ui, sans-serif;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+  }
+</style>

@@ -1,0 +1,11 @@
+---
+interface SectionContainer {
+    className: string
+}
+
+const { className } = Astro.props
+---
+
+<section class=`flex flex-col justify-center items-center py-10 md:py-20 px-10 ${className}`>
+    <slot/>
+</section>
