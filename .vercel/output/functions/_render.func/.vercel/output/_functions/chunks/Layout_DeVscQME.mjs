@@ -31,7 +31,7 @@ const $$ViewTransitions = createComponent(($$result, $$props, $$slots) => {
   Astro2.self = $$ViewTransitions;
   const { fallback = "animate" } = Astro2.props;
   return renderTemplate`<meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback"${addAttribute(fallback, "content")}>`;
-}, "C:/Users/destructordetotos/Documents/crave-bakery/crave-bakery-landing-page/node_modules/.pnpm/astro@4.16.14_rollup@4.27.3_typescript@5.7.2/node_modules/astro/components/ViewTransitions.astro", void 0);
+}, "C:/Users/destructordetotos/Documents/crave-bakery/crave-bakery-landing-page/node_modules/.pnpm/astro@4.16.14_@types+node@22.9.2_rollup@4.27.3_typescript@5.7.2/node_modules/astro/components/ViewTransitions.astro", void 0);
 
 const $$SubHeader = createComponent(($$result, $$props, $$slots) => {
   return renderTemplate`${maybeRenderHead()}<h1 class="text-7xl font-serif not-italic text-pretty"> ${renderSlot($$result, $$slots["default"])} </h1>`;

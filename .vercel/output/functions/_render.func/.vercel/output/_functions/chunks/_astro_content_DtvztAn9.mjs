@@ -369,7 +369,7 @@ const CONTENT_LAYER_IMAGE_REGEX = /__ASTRO_IMAGE_="([^"]+)"/g;
 async function updateImageReferencesInBody(html, fileName) {
   const { default: imageAssetMap } = await import('./_astro_asset-imports_D9aVaOQr.mjs');
   const imageObjects = /* @__PURE__ */ new Map();
-  const { getImage } = await import('./_astro_assets_C3fpFBzR.mjs').then(n => n._);
+  const { getImage } = await import('./_astro_assets_D9IIiQS_.mjs').then(n => n._);
   for (const [_full, imagePath] of html.matchAll(CONTENT_LAYER_IMAGE_REGEX)) {
     try {
       const decodedImagePath = JSON.parse(imagePath.replaceAll("&#x22;", '"'));
@@ -543,7 +543,7 @@ createCollectionToGlobResultMap({
 });
 
 let lookupMap = {};
-lookupMap = {"food":{"type":"content","entries":{"choco-bliss":"/src/content/food/choco-bliss.md","cookie-mind":"/src/content/food/cookie-mind.md","lemon-zest":"/src/content/food/lemon-zest.md"}}};
+lookupMap = {"food":{"type":"content","entries":{"choco-bliss":"/src/content/food/choco-bliss.md","lemon-zest":"/src/content/food/lemon-zest.md","cookie-mind":"/src/content/food/cookie-mind.md"}}};
 
 new Set(Object.keys(lookupMap));
 

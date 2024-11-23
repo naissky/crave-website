@@ -1,8 +1,8 @@
 /* empty css                                 */
 import { c as createComponent, r as renderTemplate, m as maybeRenderHead, g as renderSlot, a as renderComponent, d as addAttribute, b as createAstro } from '../chunks/astro/server_wY7ncS-m.mjs';
-import { b as $$TextHeader, a as $$SectionContainer, c as $$Layout } from '../chunks/Layout_DGBQHHJR.mjs';
-import { g as getCollection } from '../chunks/_astro_content_gzTEUz20.mjs';
-import { $ as $$Us } from '../chunks/Us_dRFLetEM.mjs';
+import { b as $$TextHeader, a as $$SectionContainer, c as $$Layout } from '../chunks/Layout_DeVscQME.mjs';
+import { g as getCollection } from '../chunks/_astro_content_DtvztAn9.mjs';
+import { $ as $$Us } from '../chunks/Us_BJwp3NRn.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$TextParraf = createComponent(($$result, $$props, $$slots) => {

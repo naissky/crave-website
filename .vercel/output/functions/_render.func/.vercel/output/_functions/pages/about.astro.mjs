@@ -1,7 +1,7 @@
 /* empty css                                 */
 import { c as createComponent, r as renderTemplate, a as renderComponent } from '../chunks/astro/server_wY7ncS-m.mjs';
-import { a as $$SectionContainer, b as $$TextHeader, c as $$Layout } from '../chunks/Layout_DGBQHHJR.mjs';
-import { $ as $$Us } from '../chunks/Us_dRFLetEM.mjs';
+import { a as $$SectionContainer, b as $$TextHeader, c as $$Layout } from '../chunks/Layout_DeVscQME.mjs';
+import { $ as $$Us } from '../chunks/Us_BJwp3NRn.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$About = createComponent(($$result, $$props, $$slots) => {

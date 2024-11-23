@@ -1,6 +1,6 @@
 /* empty css                                 */
 import { c as createComponent, r as renderTemplate, a as renderComponent } from '../chunks/astro/server_wY7ncS-m.mjs';
-import { a as $$SectionContainer, b as $$TextHeader, c as $$Layout } from '../chunks/Layout_DGBQHHJR.mjs';
+import { a as $$SectionContainer, b as $$TextHeader, c as $$Layout } from '../chunks/Layout_DeVscQME.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$Contact = createComponent(($$result, $$props, $$slots) => {
