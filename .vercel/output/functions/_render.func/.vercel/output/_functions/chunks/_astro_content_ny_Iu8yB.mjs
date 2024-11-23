@@ -543,7 +543,7 @@ createCollectionToGlobResultMap({
 });
 
 let lookupMap = {};
-lookupMap = {"food":{"type":"content","entries":{"choco-bliss":"/src/content/food/choco-bliss.md","cookie-mind":"/src/content/food/cookie-mind.md","lemon-zest":"/src/content/food/lemon-zest.md"}}};
+lookupMap = {"food":{"type":"content","entries":{"choco-bliss":"/src/content/food/choco-bliss.md","lemon-zest":"/src/content/food/lemon-zest.md","cookie-mind":"/src/content/food/cookie-mind.md"}}};
 
 new Set(Object.keys(lookupMap));
 

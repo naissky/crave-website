@@ -1,7 +1,7 @@
 /* empty css                                 */
 import { c as createComponent, r as renderTemplate, m as maybeRenderHead, g as renderSlot, a as renderComponent, d as addAttribute, b as createAstro } from '../chunks/astro/server_wY7ncS-m.mjs';
 import { b as $$TextHeader, a as $$SectionContainer, c as $$Layout } from '../chunks/Layout_2rik_0pm.mjs';
-import { g as getCollection } from '../chunks/_astro_content_D3rqqe4o.mjs';
+import { g as getCollection } from '../chunks/_astro_content_ny_Iu8yB.mjs';
 import { $ as $$Us } from '../chunks/Us_CzpAE6FN.mjs';
 export { renderers } from '../renderers.mjs';
 
